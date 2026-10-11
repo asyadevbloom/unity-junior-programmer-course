@@ -12,11 +12,11 @@ tracking my progress through the official Unity Junior Programmer pathway
 - [ ] Challenge 3
 - [ ] Bonus challenges
 
-- [ ] Unit 4
+- [x] Unit 4
 - [ ] Challenge 4
 - [ ] Bonus challenges
 
-- [ ] Unit 5
+- [x] Unit 5
 - [ ] Challenge 5
 - [ ] Bonus challenges
 
