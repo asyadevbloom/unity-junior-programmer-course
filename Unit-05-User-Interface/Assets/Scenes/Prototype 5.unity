@@ -216,11 +216,8 @@ RectTransform:
   m_Children:
   - {fileID: 299563323}
   - {fileID: 405845808}
-  - {fileID: 1228057384}
   - {fileID: 740129869}
-  - {fileID: 1521968555}
-  - {fileID: 825464344}
-  - {fileID: 740088936}
+  - {fileID: 610315593}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -760,6 +757,7 @@ MonoBehaviour:
   scoreText: {fileID: 299563324}
   gameOverText: {fileID: 405845809}
   restartButton: {fileID: 740129870}
+  titleScreen: {fileID: 610315592}
   isGameActive: 0
 --- !u!1 &405845807
 GameObject:
@@ -1205,6 +1203,45 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!1 &610315592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 610315593}
+  m_Layer: 5
+  m_Name: Title Screen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &610315593
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610315592}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1228057384}
+  - {fileID: 1521968555}
+  - {fileID: 825464344}
+  - {fileID: 740088936}
+  m_Father: {fileID: 84042710}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &740088935
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,13 +1269,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 740088935}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 527944933}
-  m_Father: {fileID: 84042710}
+  m_Father: {fileID: 610315593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1339,6 +1376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcd2b15ec105fd448a90c972164ebba2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DifficultyButton
+  difficulty: 3
 --- !u!1 &740129868
 GameObject:
   m_ObjectHideFlags: 0
@@ -1499,13 +1537,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825464343}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1737397001}
-  m_Father: {fileID: 84042710}
+  m_Father: {fileID: 610315593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1606,6 +1644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcd2b15ec105fd448a90c972164ebba2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DifficultyButton
+  difficulty: 2
 --- !u!1 &886842788
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,12 +1872,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1228057383}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 84042710}
+  m_Father: {fileID: 610315593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2109,13 +2148,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1521968554}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 276982842}
-  m_Father: {fileID: 84042710}
+  m_Father: {fileID: 610315593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2216,6 +2255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcd2b15ec105fd448a90c972164ebba2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DifficultyButton
+  difficulty: 1
 --- !u!1 &1611319330
 GameObject:
   m_ObjectHideFlags: 0
